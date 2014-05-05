@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FlashActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/seekBar1"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Increase Screen Brightness"
+        android:textColor="#FFFFFF" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:progressDrawable="@drawable/progress"
+        android:layout_marginRight="12dip"
+        android:layout_marginLeft="12dip"
+        android:layout_marginBottom="14dp"
+        android:thumb="@drawable/thumb" />
+
+    <TextView
+        android:id="@+id/tvPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/btnFlash"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/on" />
+
+    <ImageView
+        android:id="@+id/imvsoundOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekBar1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
+        android:contentDescription="@null"
+        android:src="@drawable/sound" />
+
+    <TextView
+        android:id="@+id/tvOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvPercentage"
+        android:layout_alignLeft="@+id/btnFlash"
+        android:layout_alignRight="@+id/btnFlash"
+        android:layout_marginBottom="50dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
+
+</RelativeLayout>
